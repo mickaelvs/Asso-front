@@ -149,8 +149,6 @@ export default {
 
       commentListRequest.then(response => {
         this.commentItems = response.data;
-        this.commentCount = response.headers["x-wp-total"];
-
         this.commentsLoaded = true;
       });
       commentListRequest.catch(error => {
